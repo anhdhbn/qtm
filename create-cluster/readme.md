@@ -21,3 +21,4 @@
     > ![hello-world-picture](./hello-world.png)
   - Get pods: `kubectl get po`
     > ![Get-po-picture](./get-po.png)
+  - Remove pod: `kubectl delete pod kubernetes-bootcamp`
