@@ -15,5 +15,9 @@
     ![join-command-picture](./join-command.png)
     Ex: `kubeadm join 10.128.15.229:6443 --token lzftb1.y340dlibr22obp7j     --discovery-token-ca-cert-hash sha256:9499447d4ea59e9646002054244702ca4801af1cb4b65c74d837f1b33acfff8a`
 5. Testing
-  > Enter: `kubectl get no`
-  ![get-nodes-picture](./get-nodes.png)
+  - Get nodes: `kubectl get no`
+    ![get-nodes-picture](./get-nodes.png)
+  - Create hello-world app: `kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp --port=8080`
+    ![hello-world-picture](./hello-world.png)
+  - Get pods: `kubectl get po`
+    ![Get-po-picture](./get-po.png)
