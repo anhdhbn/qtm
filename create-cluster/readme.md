@@ -20,5 +20,6 @@
   - Create hello-world app: `kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp --port=8080`
     > ![hello-world-picture](./hello-world.png)
   - Get pods: `kubectl get po`
-    > ![Get-po-picture](./get-po.png)
+    > ![Get-pod-picture](./get-po.png)
   - Remove pod: `kubectl delete pod kubernetes-bootcamp`
+    > ![Remove-pod-picture](./remove-pod.png)
