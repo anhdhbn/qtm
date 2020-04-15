@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: backend-k8s-test
+  type: NodePort
   ports:
   - protocol: TCP
     port: 8080
