@@ -1,0 +1,1 @@
+docker run -d -p 81:80 anhdhbn/backend-k8s
