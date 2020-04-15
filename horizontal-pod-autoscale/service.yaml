@@ -1,7 +1,6 @@
 kind: Service
 apiVersion: v1
 metadata:
-  namespace: qtm
   name: backend-k8s-test-service
 spec:
   selector:

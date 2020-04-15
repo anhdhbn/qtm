@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: qtm
   name: backend-k8s-test
   labels:
     app: backend-k8s-test
