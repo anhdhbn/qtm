@@ -1,24 +1,24 @@
-apiVersion: apps/v1 
-kind: Deployment 
-metadata: 
-  name: fib 
-  labels: 
-    app: fib 
-spec: 
-  selector: 
-    matchLabels: 
-      app: fib 
-  template: 
-    metadata: 
-      labels: 
-        app: fib 
-    spec: 
-      containers: 
-      - name: fib 
-        image: errm/fib 
-        ports: 
-        - containerPort: 9292 
-        resources: 
-          limits: 
-            cpu: 250m 
-            memory: 32Mi
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: qtm
+  name: backend-k8s-test
+  labels:
+    app: backend-k8s-test
+spec:
+  selector:
+    matchLabels:
+      app: backend-k8s-test
+  template:
+    metadata:
+      labels:
+        app: backend-k8s-test
+    spec:
+      containers:
+      - name: backend-k8s-test
+        image: anhdhbn/backend-k8s
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            cpu: 250m
