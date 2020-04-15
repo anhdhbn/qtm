@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-k8s-test
+  labels:
+    app: backend-k8s-test
+spec:
+  selector:
+    matchLabels:
+      app: backend-k8s-test
+  template:
+    metadata:
+      labels:
+        app: backend-k8s-test
+    spec:
+      containers:
+      - name: backend-k8s-test
+        image: anhdhbn/backend-k8s
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+          limits:
+            cpu: 2000m
