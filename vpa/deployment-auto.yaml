@@ -20,4 +20,4 @@ spec:
             cpu: 100m
             memory: 50Mi
         command: ["/bin/sh"]
-        args: ["-c", "while true; do timeout 0.5s yes >/dev/null; sleep 0.5s; done"]
+        args: ["-c", "while true; do timeout 0.5s yes; sleep 0.5s; done"]
